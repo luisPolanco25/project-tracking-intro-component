@@ -43,6 +43,10 @@ header {
     justify-content: space-between;
 }
 
+#hamburger {
+    display: none;
+    cursor: pointer;
+}
 
 header ul {
     display: flex;
@@ -227,6 +231,7 @@ p {
     
     main {
         flex-direction: column;
+        padding-left: 32px;
     }
 
     #main-text {
@@ -249,3 +254,59 @@ p {
     }
 }
 
+@media (max-width: 728px) {
+    
+    header nav {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+    
+    #main-text {
+        flex-basis: 100%;
+        padding-bottom: 92px;
+    }
+
+    #new div {
+        font-size: 0.88rem;
+    }
+
+    #main-text h1 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        margin-bottom: 28px;
+    }
+
+    #demo {
+        width: 152px;
+        font-size: 0.8rem;
+        padding: 12px;
+        margin-right: 16px;
+        border-radius: 5px;
+    }
+
+    #preview {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        word-spacing: 0;
+    }
+
+    #main-image {
+        flex-basis: 100%;
+    }
+
+    #main-image img {
+        width: 500px;
+        left: -23px;
+    }
+
+    #bg-blue {
+        width: 186px;
+        height: 424px;
+        border-bottom-left-radius: 52px;
+    }
+}
