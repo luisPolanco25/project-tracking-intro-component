@@ -267,6 +267,8 @@ p {
         position: absolute;
         width: 82.8%;
         top: 100px;
+        left: 50%;
+        transform: translate(-50%, 0);
         z-index: 1;
     }
 
@@ -348,5 +350,57 @@ p {
         width: 186px;
         height: 424px;
         border-bottom-left-radius: 52px;
+    }
+}
+
+@media (max-width: 330px) {
+
+    header {
+        padding: 38px 12px 64px 12px;
+    }
+
+    main {
+        padding-left: 12px;
+    }
+    
+    #main-text {
+        padding-bottom: 78px;
+    }
+    
+    #demo {
+        margin-right: 0;
+    }
+    
+    #preview {
+        display: block;
+        text-align: left;
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 295px) {
+    #main-text {
+        padding-bottom: 64px;
+    }
+    
+    #new div {
+        margin-right: 10px;
+    }
+
+    span {
+        letter-spacing: 3px;
+        color: var(--grayish-blue);
+        font-weight: var(--regular);
+        font-size: 0.80rem;
+        word-spacing: 1px;
+    }
+
+    #main-text h1 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+
+    #main-text p {
+        font-size: 0.92rem;
     }
 }
