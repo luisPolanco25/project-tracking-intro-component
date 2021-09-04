@@ -264,7 +264,7 @@ p {
     
     header nav {
         display: none;
-        position: absolute;
+        position: fixed;
         width: 82.8%;
         top: 100px;
         left: 50%;
