@@ -7,6 +7,7 @@
     --very-dark-blue: hsl(230, 29%, 20%);
     --dark-grayish-blue: hsl(230, 11%, 40%);
     --grayish-blue: hsl(231, 7%, 65%);
+    --hamburger-menu-border: hsl(231, 7%, 65%, 0.4);
     --light-grayish-blue: hsl(207, 33%, 95%);
 
     /* Body's font */
@@ -256,8 +257,47 @@ p {
 
 @media (max-width: 728px) {
     
+    #logo {
+        width: 24px;
+        height: 24px;
+    }
+    
     header nav {
         display: none;
+        position: absolute;
+        width: 82.8%;
+        top: 100px;
+        z-index: 1;
+    }
+
+    header ul {
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+        padding: 12px 24px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    header ul li {
+        margin-right: 0;
+        font-size: 1.05rem;
+        padding: 11px;
+        width: 100%;
+        text-align: center;
+    }
+
+    header ul li:last-child {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 0;
+        border-top: 1px solid var(--hamburger-menu-border);
+        padding-top: 22px;
+        margin-top: 13px;
+    }
+
+    header ul li a {
+        display: block;
+        width: 100%;
     }
 
     #hamburger {
